@@ -1,5 +1,6 @@
 body {
     font-family: 木漏れ日ゴシック;
+    src: url("MODI_komorebi-gothic_2018_0501/komorebi-gothic-P.ttf");
     text-align: center;
     background: linear-gradient(rgb(234, 203, 3),rgb(238, 149, 219),pink);
 }
@@ -10,6 +11,8 @@ body {
     border: 1px;
     color: rgb(245, 246, 248);
     font-family: 木漏れ日ゴシック;
+    src: url("MODI_komorebi-gothic_2018_0501/komorebi-gothic-P.ttf");
+    
     margin: 20px auto;
     width: 300px;
     height: 50px;
@@ -55,6 +58,7 @@ p3 {
 .unko{
     text-align: center;
     font-family: 木漏れ日ゴシック;
+    src: url("MODI_komorebi-gothic_2018_0501/komorebi-gothic-P.ttf");
     font-size: x-large;
     margin-bottom: 30px;
 }
@@ -111,6 +115,7 @@ p3 {
     height:36px;
     opacity:0;
     font-family:木漏れ日ゴシック;
+      src: url("MODI_komorebi-gothic_2018_0501/komorebi-gothic-P.ttf");
     animation:move 2s linear forwards;
     -o-animation:move 2s linear forwards;
     -moz-animation:move 2s linear forwards;
