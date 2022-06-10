@@ -4,60 +4,57 @@
 
     <meta charset="UTF-8">
 
-    <link href="chonmaaaa.github.io/chonmaomikuji/omikujistyle.css" rel="stylesheet">
     
+ 
+ 
     <script>
-        
         const results = [
 
-  'いいことあるかも！',
-  '100円拾うかも✨',
-  '10円拾うかも卍',
-  '大凶',
-  '凶'
+'いいことあるかも！',
+'100円拾うかも✨',
+'10円拾うかも卍',
+'大凶',
+'凶'
 ];
 
- function draw(){
+function draw(){
 
-   const key = Math.floor(Math.random()*5)
-   console.log(key)
-   const fortune = document.getElementById("fortune")
-   fortune.textContent = results[key]
+ const key = Math.floor(Math.random()*5)
+ console.log(key)
+ const fortune = document.getElementById("fortune")
+ fortune.textContent = results[key]
 
-   var chengeImg = document.getElementById("images");
+ var chengeImg = document.getElementById("images");
 
-    if(key == 0){
-      chengeImg.src = "daikiti.jpg";
-      console.log('さいこう！');
-    }
-    if(key == 1){
-      chengeImg.src = "tyukiti.jpg";
-      console.log('いいね！');
-    }
-    if(key == 2){
-      chengeImg.src = "shoukiti.jpg";
-      console.log('まあまなのかな');
-    }
-    if(key == 3){
-      chengeImg.src = "netahouga.jpg";
-      console.log('あしたまた頑張ろう');
-      window.alert('本当に見ますか？');
-    }
-    if(key == 4){
-      chengeImg.src = "akan.jpg";
-      console.log('そんなひもある...');
-      
-    }
-
+  if(key == 0){
+    chengeImg.src = "daikiti.jpg";
+    console.log('さいこう！');
+  }
+  if(key == 1){
+    chengeImg.src = "tyukiti.jpg";
+    console.log('いいね！');
+  }
+  if(key == 2){
+    chengeImg.src = "shoukiti.jpg";
+    console.log('まあまなのかな');
+  }
+  if(key == 3){
+    chengeImg.src = "netahouga.jpg";
+    console.log('あしたまた頑張ろう');
+    window.alert('本当に見ますか？');
+  }
+  if(key == 4){
+    chengeImg.src = "akan.jpg";
+    console.log('そんなひもある...');
+    
   }
 
-
- console.log(results);
-
+}
 
 
-    
-    
+console.log(results);
+
+
     </script>
     
     <title>ちいかわ★おみくじ</title>
@@ -65,33 +62,23 @@
 </head>
 
 <body>
+    <background color="orange">
+    <center></center>
 
-    <table class="opning"><tr><td>
-
-        <div id="load">
-            <div></div>
-            <div>い　</div>
-            <div>占　</div>
-            <div>わ　</div>
-            <div>か　</div>
-            <div>い　</div>
-            <div>ち　</div>
-          </div>
-
-
-
-    </td></tr></table>
-
+    
    
 
-        <table class="table">
+        <table border="1px" bordercolor="red" color="white">
+            <center><font face="木漏れ日ゴシック">
+            
+
 
             <tr1><td>
 
                 <br>
-                <p1>あなたの今日の</p1>
-                <p3>運勢</p3>
-                <p1>は...</p1>
+                <font size="5" color="black">あなたの今日の</font>
+                <font size="7" color="pink"><b>運勢</b></font>
+                <font size="5">は...</font>
                 <br><br>
 
             </td></tr1>
@@ -114,14 +101,18 @@
 
             <tr><td>
 
-                    <button onclick="draw()" class="btn_omikuji">
-                        <p2>おみくじをひく</p2>
+                    <button onclick="draw()" color="red">
+                        <font color="white" size="7"><p2>おみくじをひく</p2></font>
                     </button>
                 
             </td></tr>
+
+            </font></center>
                            
             
-        </table>    
+        </table>  
+
+        </center>  </background>
     
 </body>
 </html>
