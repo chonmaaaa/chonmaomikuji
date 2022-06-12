@@ -3,351 +3,341 @@
 <head>
 
     <meta charset="UTF-8">
-    
-    <mate name="viewport" content="width=device-width">
-    
+
     <style type="text/css">
-        
-        
-        
-        body {
-    font-family: 木漏れ日ゴシック;
-    src:url("https://github.com/chonmaaaa/chonmaomikuji/blob/main/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf");
-    text-align: center;
-    background: linear-gradient(rgb(234, 203, 3),rgb(238, 149, 219),pink);
-}
 
-.btn_omikuji {
-    background-color: rgb(246, 146, 146);
-    border: 10px;
-    color: rgb(245, 246, 248);
-    font-family: 木漏れ日ゴシック;
-    margin: 20px auto;
-    width: 500px;
-    height: 100px;
-    text-shadow: 1px 1px 5px rgb(176, 2, 2);
-}
-        
- .img {
-     width: 500px;
-     height: 100px;
-
-
-
-p2 {
-    font-size: xx-large;
-    margin: 10px 20px;
-}
-
-td {
-    border: 20px white;
-    width: 700px;
-    text-align: center;
-}
-
-p1{
-    color: black;
-    font-size: 50px;
-}
-
-p3 {
-    color: aliceblue;
-    text-align: center;
-    font-size: 100px;
-    text-shadow: 0px 0px 20px red;
-
-}
-
-.kokoni {
-    background-image: url(./images/8805.jpg);
-    background-position: center;
-    background-size: 400px 100px;
-    background-repeat: no-repeat;
-    background-color: white;
-    width: 600px;
-    height: 100px;
-}
-
-.unko{
-    text-align: center;
-    font-family: 木漏れ日ゴシック;
-    src:url("https://github.com/chonmaaaa/chonmaomikuji/blob/main/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf");
-    font-size: 70px;
-    margin-bottom: 30px;
-}
-
-
-
-.table {
-    background-color: white;
-    border: 20px rgb(251, 127, 185) double;
-    margin: 80px auto;
-    text-align: center;
-    animation-name: chonma;
-    animation-duration: 5s;
-    opacity: 1;
-    animation-fill-mode: forwards;
-    position: relative;
-
-}
-
-@keyframes chonma{
-    0%{
-        opacity: 0;
+body {
+        font-family: 木漏れ日ゴシック;
+        src:url("https://github.com/chonmaaaa/chonmaomikuji/blob/main/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf");
+        text-align: center;
     }
-    80%{
-        opacity: 0;
+
+    
+
+    
+
+    
+    .btn_omikuji {
+        background-color: rgb(246, 146, 146);
+        border: 1px;
+        color: rgb(245, 246, 248);
+        font-family: 木漏れ日ゴシック;
+        src:url("https://github.com/chonmaaaa/chonmaomikuji/blob/main/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf");
+        margin: 20px auto;
+        width: 300px;
+        height: 50px;
+        text-shadow: 1px 1px 5px rgb(176, 2, 2);
     }
-    100%{
+    
+    
+    
+    p2 {
+        font-size: large;
+        margin: 10px 20px;
+    }
+    
+    td {
+        border: 1px white;
+        width: 500px;
+        text-align: center;
+    }
+    
+    p1{
+        color: black;
+        font-size: large;
+    }
+    
+    p3 {
+        color: aliceblue;
+        text-align: center;
+        font-size: x-large;
+        text-shadow: 0px 0px 20px red;
+    
+    }
+    
+    .kokoni {
+        background-image: url(./images/8805.jpg);
+        background-position: center;
+        background-size: 400px 100px;
+        background-repeat: no-repeat;
+        background-color: white;
+        width: 600px;
+        height: 100px;
+    }
+    
+    .unko{
+        text-align: center;
+        font-family: 木漏れ日ゴシック;
+        src:url("https://github.com/chonmaaaa/chonmaomikuji/blob/main/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf");
+        font-size: x-large;
+        margin-bottom: 30px;
+    }
+    
+    
+    
+    .table {
+        background-color: rgb(254, 254, 254);
+        border: 10px rgb(251, 127, 185) double;
+        margin: 80px auto;
+        text-align: center;
+        animation-name: chonma;
+        animation-duration: 7s;
         opacity: 1;
-    }
-
-}
-
-
-
-#load {
-    position:absolute;
-    width:600px;
-    height:36px;
-    left:50%;
-    top:40%;
-    margin-left:-300px;
-    overflow:visible;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    cursor:default;
-    font-size: 100px;
-  }
-  
-  #load div {
-    position:absolute;
-    width:20px;
-    height:36px;
-    opacity:0;
-    font-family:木漏れ日ゴシック;
-      src:url("https://github.com/chonmaaaa/chonmaomikuji/blob/main/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf");
-    animation:move 2s linear forwards;
-    -o-animation:move 2s linear forwards;
-    -moz-animation:move 2s linear forwards;
-    -webkit-animation:move 2s linear forwards;
-    transform:rotate(180deg);
-    -o-transform:rotate(180deg);
-    -moz-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-    color:white;
-    text-shadow: 0px 0px 50px rgb(254, 106, 21);
+        animation-fill-mode: forwards;
+        position: relative;
     
-
-  }
-  
-  #load div:nth-child(2) {
-    animation-delay:1;
-    -o-animation-delay:1s;
-    -moz-animation-delay:1s;
-    -webkit-animation-delay:1s;
-  }
-  #load div:nth-child(3) {
-    animation-delay:1.3s;
-    -o-animation-delay:1.3s;
-    -webkit-animation-delay:1.3s;
-    -webkit-animation-delay:1.3s;
-  }
-  #load div:nth-child(4) {
-    animation-delay:1.6s;
-    -o-animation-delay:1.6s;
-    -moz-animation-delay:1.6s;
-    -webkit-animation-delay:1.6s;
-  }
-  #load div:nth-child(5) {
-    animation-delay:1.9s;
-    -o-animation-delay:1.9s;
-    -moz-animation-delay:1.9s;
-    -webkit-animation-delay:1.9s;
-  }
-  #load div:nth-child(6) {
-    animation-delay:2.2s;
-    -o-animation-delay:2.2s;
-    -moz-animation-delay:2.2s;
-    -webkit-animation-delay:2.2s;
-  }
-  #load div:nth-child(7) {
-    animation-delay:2.5s;
-    -o-animation-delay:2.5s;
-    -moz-animation-delay:2.5s;
-    -webkit-animation-delay:2.5s;
-  }
-  
-  @keyframes move {
-    0% {
-      left:0;
-      opacity:0;
     }
-    35% {
-      left: 41%; 
-      -moz-transform:rotate(0deg);
-      -webkit-transform:rotate(0deg);
-      -o-transform:rotate(0deg);
-      transform:rotate(0deg);
-      opacity:1;
+    
+    @keyframes chonma{
+        0%{
+            opacity: 0;
+        }
+        80%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    
     }
-    65% {
-      left:59%; 
-      -moz-transform:rotate(0deg); 
-      -webkit-transform:rotate(0deg); 
-      -o-transform:rotate(0deg);
-      transform:rotate(0deg); 
-      opacity:1;
-    }
-    100% {
-      left:100%; 
-      -moz-transform:rotate(-180deg); 
-      -webkit-transform:rotate(-180deg); 
-      -o-transform:rotate(-180deg); 
-      transform:rotate(-180deg);
-      opacity:0;
-    }
-  }
-  
-  @-moz-keyframes move {
-    0% {
-      left:0; 
-      opacity:0;
-    }
-    35% {
-      left:41%; 
-      -moz-transform:rotate(0deg); 
-      transform:rotate(0deg);
-      opacity:1;
-    }
-    65% {
-      left:59%; 
-      -moz-transform:rotate(0deg); 
-      transform:rotate(0deg);
-      opacity:1;
-    }
-    100% {
-      left:100%; 
-      -moz-transform:rotate(-180deg); 
-      transform:rotate(-180deg);
-      opacity:0;
-    }
-  }
-  
-  @-webkit-keyframes move {
-    0% {
-      left:0; 
-      opacity:0;
-    }
-    35% {
-      left:41%; 
-      -webkit-transform:rotate(0deg); 
-      transform:rotate(0deg); 
-      opacity:1;
-    }
-    65% {
-      left:59%; 
-      -webkit-transform:rotate(0deg); 
-      transform:rotate(0deg); 
-      opacity:1;
-    }
-    100% {
-      left:100%;
-      -webkit-transform:rotate(-180deg); 
-      transform:rotate(-180deg); 
-      opacity:0;
-    }
-  }
-  
-  @-o-keyframes move {
-    0% {
-      left:0; 
-      opacity:0;
-    }
-    35% {
-      left:41%; 
-      -o-transform:rotate(0deg); 
-      transform:rotate(0deg); 
-      opacity:1;
-    }
-    65% {
-      left:59%; 
-      -o-transform:rotate(0deg); 
-      transform:rotate(0deg); 
-      opacity:1;
-    }
-    100% {
-      left:100%; 
-      -o-transform:rotate(-180deg); 
-      transform:rotate(-180deg); 
-      opacity:0;
-    }
-  }
-  
-  
-  
-
- 
-
     
     
+    
+    #load {
+        background-color: white;
+        position:absolute;
+        width:600px;
+        height:36px;
+        left:50%;
+        top:40%;
+        margin-left:-300px;
+        overflow:visible;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        cursor:default;
+        font-size: 50px;
+      }
+      
+      #load div {
+        position:absolute;
+        width:20px;
+        height:36px;
+        opacity:0;
+        font-family:木漏れ日ゴシック;
+        src:url("https://github.com/chonmaaaa/chonmaomikuji/blob/main/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf");
+        animation:move 2s linear forwards;
+        -o-animation:move 2s linear forwards;
+        -moz-animation:move 2s linear forwards;
+        -webkit-animation:move 2s linear forwards;
+        transform:rotate(180deg);
+        -o-transform:rotate(180deg);
+        -moz-transform:rotate(180deg);
+        -webkit-transform:rotate(180deg);
+        color:white;
+        text-shadow: 0px 0px 50px rgb(254, 106, 21);
+        
+    
+      }
+      
+      #load div:nth-child(2) {
+        animation-delay:1;
+        -o-animation-delay:1s;
+        -moz-animation-delay:1s;
+        -webkit-animation-delay:1s;
+      }
+      #load div:nth-child(3) {
+        animation-delay:1.3s;
+        -o-animation-delay:1.3s;
+        -webkit-animation-delay:1.3s;
+        -webkit-animation-delay:1.3s;
+      }
+      #load div:nth-child(4) {
+        animation-delay:1.6s;
+        -o-animation-delay:1.6s;
+        -moz-animation-delay:1.6s;
+        -webkit-animation-delay:1.6s;
+      }
+      #load div:nth-child(5) {
+        animation-delay:1.9s;
+        -o-animation-delay:1.9s;
+        -moz-animation-delay:1.9s;
+        -webkit-animation-delay:1.9s;
+      }
+      #load div:nth-child(6) {
+        animation-delay:2.2s;
+        -o-animation-delay:2.2s;
+        -moz-animation-delay:2.2s;
+        -webkit-animation-delay:2.2s;
+      }
+      #load div:nth-child(7) {
+        animation-delay:2.5s;
+        -o-animation-delay:2.5s;
+        -moz-animation-delay:2.5s;
+        -webkit-animation-delay:2.5s;
+      }
+      
+      @keyframes move {
+        0% {
+          left:0;
+          opacity:0;
+        }
+        35% {
+          left: 41%; 
+          -moz-transform:rotate(0deg);
+          -webkit-transform:rotate(0deg);
+          -o-transform:rotate(0deg);
+          transform:rotate(0deg);
+          opacity:1;
+        }
+        65% {
+          left:59%; 
+          -moz-transform:rotate(0deg); 
+          -webkit-transform:rotate(0deg); 
+          -o-transform:rotate(0deg);
+          transform:rotate(0deg); 
+          opacity:1;
+        }
+        100% {
+          left:100%; 
+          -moz-transform:rotate(-180deg); 
+          -webkit-transform:rotate(-180deg); 
+          -o-transform:rotate(-180deg); 
+          transform:rotate(-180deg);
+          opacity:0;
+        }
+      }
+      
+      @-moz-keyframes move {
+        0% {
+          left:0; 
+          opacity:0;
+        }
+        35% {
+          left:41%; 
+          -moz-transform:rotate(0deg); 
+          transform:rotate(0deg);
+          opacity:1;
+        }
+        65% {
+          left:59%; 
+          -moz-transform:rotate(0deg); 
+          transform:rotate(0deg);
+          opacity:1;
+        }
+        100% {
+          left:100%; 
+          -moz-transform:rotate(-180deg); 
+          transform:rotate(-180deg);
+          opacity:0;
+        }
+      }
+      
+      @-webkit-keyframes move {
+        0% {
+          left:0; 
+          opacity:0;
+        }
+        35% {
+          left:41%; 
+          -webkit-transform:rotate(0deg); 
+          transform:rotate(0deg); 
+          opacity:1;
+        }
+        65% {
+          left:59%; 
+          -webkit-transform:rotate(0deg); 
+          transform:rotate(0deg); 
+          opacity:1;
+        }
+        100% {
+          left:100%;
+          -webkit-transform:rotate(-180deg); 
+          transform:rotate(-180deg); 
+          opacity:0;
+        }
+      }
+      
+      @-o-keyframes move {
+        0% {
+          left:0; 
+          opacity:0;
+        }
+        35% {
+          left:41%; 
+          -o-transform:rotate(0deg); 
+          transform:rotate(0deg); 
+          opacity:1;
+        }
+        65% {
+          left:59%; 
+          -o-transform:rotate(0deg); 
+          transform:rotate(0deg); 
+          opacity:1;
+        }
+        100% {
+          left:100%; 
+          -o-transform:rotate(-180deg); 
+          transform:rotate(-180deg); 
+          opacity:0;
+        }
+
+
+
     </style>
 
-    
     <script>
-    
         const results = [
 
-  'いいことあるかも！',
-  '100円拾うかも✨',
-  '10円拾うかも卍',
-  '大凶',
-  '凶'
+'いいことあるかも！',
+'100円拾うかも✨',
+'10円拾うかも卍',
+'大凶',
+'凶'
 ];
 
- function draw(){
+function draw(){
 
-   const key = Math.floor(Math.random()*5)
-   console.log(key)
-   const fortune = document.getElementById("fortune")
-   fortune.textContent = results[key]
+ const key = Math.floor(Math.random()*5)
+ console.log(key)
+ const fortune = document.getElementById("fortune")
+ fortune.textContent = results[key]
 
-   var chengeImg = document.getElementById("images");
+ var chengeImg = document.getElementById("images");
 
-    if(key == 0){
-      chengeImg.src = "daikiti.jpg";
-      console.log('さいこう！');
-    }
-    if(key == 1){
-      chengeImg.src = "tyukiti.jpg";
-      console.log('いいね！');
-    }
-    if(key == 2){
-      chengeImg.src = "shoukiti.jpg";
-      console.log('まあまなのかな');
-    }
-    if(key == 3){
-      chengeImg.src = "netahouga.jpg";
-      console.log('あしたまた頑張ろう');
-      window.alert('本当に見ますか？');
-    }
-    if(key == 4){
-      chengeImg.src = "akan.jpg";
-      console.log('そんなひもある...');
-      
-    }
-
+  if(key == 0){
+    chengeImg.src = "daikiti.jpg";
+    console.log('さいこう！');
+  }
+  if(key == 1){
+    chengeImg.src = "tyukiti.jpg";
+    console.log('いいね！');
+  }
+  if(key == 2){
+    chengeImg.src = "shoukiti.jpg";
+    console.log('まあまなのかな');
+  }
+  if(key == 3){
+    chengeImg.src = "netahouga.jpg";
+    console.log('あしたまた頑張ろう');
+    window.alert('本当に見ますか？');
+  }
+  if(key == 4){
+    chengeImg.src = "akan.jpg";
+    console.log('そんなひもある...');
+    
   }
 
+}
 
- console.log(results);
+
+console.log(results);
 
 
 
     
-    </script>
+      </script>
     
     <title>ちいかわ★おみくじ</title>
 
@@ -359,12 +349,12 @@ p3 {
 
         <div id="load">
             <div></div>
-            <div>い　</div>
-            <div>占　</div>
-            <div>わ　</div>
-            <div>か　</div>
-            <div>い　</div>
-            <div>ち　</div>
+            <div><img src="./images/9334.jpg"></div>
+            <div><img src="./images/9333.jpg"></div>
+            <div><img src="./images/9333.jpg"></div>
+            <div><img src="./images/9334.jpg"></div>
+            <div><img src="./images/9333.jpg"></div>
+            <div><img src="./images/9335.jpg"></div>
           </div>
 
 
@@ -397,17 +387,34 @@ p3 {
 
             <tr><td>
 
-                  <img id="images" src="./images/8174.gif" class="img">
+                  <img id="images" src="./images/8174.gif"">
             
             </td></tr>
 
             <tr><td>
+                    
+                    <button onclick="draw()" class="btn_omikuji" id="btn_btn">
+                        
+                       
 
-                    <button onclick="draw()" class="btn_omikuji">
                         <p2>おみくじをひく</p2>
+
                     </button>
+
+                    
+
+                    
                 
             </td></tr>
+
+            <tr><td>
+
+               
+            
+            
+            </td></tr>
+
+
                            
             
         </table>    
